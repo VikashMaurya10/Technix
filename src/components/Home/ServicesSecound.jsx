@@ -7,7 +7,7 @@ import shap1 from "../../assets/fun-fact/shape-1.png"
 import shap3 from "../../assets/fun-fact/shape-3.png"
 import shap4 from "../../assets/fun-fact/shape-4.png"
 
-const Services2 = () => {
+const ServicesSecound = () => {
     const [scrollPercentage, setScrollPercentage] = useState(0);
 
     const updateScrollPercentage = () => {
@@ -78,4 +78,4 @@ const Services2 = () => {
     )
 }
 
-export default Services2
+export default ServicesSecound

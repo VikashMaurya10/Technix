@@ -53,7 +53,7 @@ const cardData = [
   },
 ]
 
-const Services1 = () => {
+const ServicesFirst = () => {
   return (
     <section className='bg-darkblue text-white pt-8 font-robo'>
       <p className='text-center italic wavyUnderline'>
@@ -76,4 +76,4 @@ const Services1 = () => {
   )
 }
 
-export default Services1
+export default ServicesFirst
