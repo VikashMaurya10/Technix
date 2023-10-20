@@ -23,7 +23,7 @@ const ServicesSecound = () => {
     }, []);
 
     return (
-        <section className=' radialGradient relative overflow-hidden text-white py-16 flex lg:flex-row flex-col items-center gap-10 xl:gap-0 px-6 min-h-screen'>
+        <section className='radialGradient relative overflow-hidden text-white py-16 flex lg:flex-row flex-col items-center gap-10 xl:gap-0 px-6'>
             <div className='lg:hidden block'>
                 <p className='wavyUnderline italic max-lg:text-center md:text-base text-sm'>service <span className='text-cyan'>it solutions</span></p>
                 <h2 className='md:text-3xl text-2xl font-rele font-semibold mt-7 max-sm:text-center'>Tech Change The World</h2>
@@ -50,7 +50,7 @@ const ServicesSecound = () => {
                     <img className='w-full h-full object-contain' src={world} alt="loading.." />
                 </div>
             </div>
-            <div className='lg:w-[45%] sm:w-[80%] relative'>
+            <div className='lg:w-[45%] sm:w-[80%] relative z-10'>
                 <div className='lg:block hidden'>
                     <p className='wavyUnderline italic'>service <span className='text-cyan'>it solutions</span></p>
                     <h2 className='text-3xl font-rele font-semibold mt-7'>Tech Change The World</h2>
@@ -70,14 +70,14 @@ const ServicesSecound = () => {
                 </div>
             </div>
 
-            <div className='absolute -bottom-[99%] -left-[40%]'>
+            <div className='absolute xl:-bottom-[99%] xl:-left-[45%] lg:-bottom-[100%] lg:-left-[70%] md:-bottom-[68%] md:-left-[70%] -bottom-[70%] -left-[90%] '>
                 <img className='rotateImage' src={shap2} alt="loading..." />
             </div>
             <div className='absolute sm:top-[10%] top-4 left-4'>
                 <img src={shap1} alt="loading..." />
             </div>
-            <div className='absolute bottom-0 right-0'>
-                <div className='h-[350px]'>
+            <div className='absolute bottom-0 right-0 max-sm:w-[50%]'>
+                <div className='sm:h-[350px]'>
                     <img className='h-full object-contain w-full' src={shap3} alt="loading..." />
                 </div>
             </div>
