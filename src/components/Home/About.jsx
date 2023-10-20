@@ -39,9 +39,7 @@ const About = () => {
       </div>
       <div className="w-[90%] m-auto xl:gap-10 flex xl:flex-row flex-col">
         <div className={`xl:w-[40%] sm:w-[50%] max-xl:h-[400px] mx-auto bg-[url(/src/assets/about/shape-1.png)] bg-contain bg-no-repeat xl:bg-[0_4rem] bg-right-top`}>
-          {/* <div className="h-[400px]"> */}
-            <img className="w-full h-full object-contain" src={img1} alt="loading.." />
-          {/* </div> */}
+          <img className="w-full h-full object-contain" src={img1} alt="loading.." />
         </div>
         <div className="xl:w-[60%] w-full xl:py-16">
           <div className="xl:block hidden">
