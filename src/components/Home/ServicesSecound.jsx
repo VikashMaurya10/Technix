@@ -23,7 +23,7 @@ const ServicesSecound = () => {
     }, []);
 
     return (
-        <section className=' radialGradient relative overflow-hidden text-white py-16 flex lg:flex-row flex-col items-center gap-10 xl:gap-0 px-6'>
+        <section className=' radialGradient relative overflow-hidden text-white py-16 flex lg:flex-row flex-col items-center gap-10 xl:gap-0 px-6 min-h-screen'>
             <div className='lg:hidden block'>
                 <p className='wavyUnderline italic max-lg:text-center md:text-base text-sm'>service <span className='text-cyan'>it solutions</span></p>
                 <h2 className='md:text-3xl text-2xl font-rele font-semibold mt-7 max-sm:text-center'>Tech Change The World</h2>
