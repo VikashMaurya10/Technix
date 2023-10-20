@@ -59,10 +59,10 @@ const ServicesFirst = () => {
       <p className='text-center italic wavyUnderline'>
         service <span className='text-cyan'>it solutions</span>
       </p>
-      <h1 className='text-center text-4xl mt-8 font-rele font-bold'>
+      <h1 className='text-center lg:text-4xl md:text-3xl text-2xl mt-8 font-rele font-bold max-sm:w-[90%] max-sm:mx-auto'>
         All Professional <span className="text-cyan">IT Solutions</span> & Services
       </h1>
-      <div className='grid grid-cols-5 gap-4 px-4  my-16'>
+      <div className='grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 md:gap-4 gap-8 px-4 my-16 max-sm:w-[90%] max-sm:mx-auto'>
         {
           cardData.map((value, i) => {
             return (

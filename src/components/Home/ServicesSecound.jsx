@@ -23,32 +23,38 @@ const ServicesSecound = () => {
     }, []);
 
     return (
-        <section className=' radialGradient relative overflow-hidden text-white py-16 flex items-center'>
-            <div className='w-[55%] gap-4 flex items-center justify-evenly '>
-                <div className='flex items-center justify-evenly gap-10 flex-col'>
-                    <p className='text-center'>
-                        <span className='strokeme text-4xl font-bold font-rele tracking-[2px] block'>10+</span>
+        <section className=' radialGradient relative overflow-hidden text-white py-16 flex lg:flex-row flex-col items-center gap-10 xl:gap-0 px-6'>
+            <div className='lg:hidden block'>
+                <p className='wavyUnderline italic max-lg:text-center md:text-base text-sm'>service <span className='text-cyan'>it solutions</span></p>
+                <h2 className='md:text-3xl text-2xl font-rele font-semibold mt-7 max-sm:text-center'>Tech Change The World</h2>
+            </div>
+            <div className='lg:w-[55%] w-[80%] gap-4 flex items-center sm: justify-evenly '>
+                <div className='flex items-center justify-evenly lg:gap-10 gap-6 flex-col'>
+                    <p className='text-center whitespace-nowrap'>
+                        <span className='strokeme lg:text-4xl text-3xl font-bold font-rele tracking-[2px] block'>10+</span>
                         Experience
                     </p>
-                    <p className='text-center'>
-                        <span className='strokeme text-4xl font-bold font-rele tracking-[3px] block'>255</span>
+                    <p className='text-center whitespace-nowrap'>
+                        <span className='strokeme lg:text-4xl text-3xl font-bold font-rele tracking-[3px] block'>255</span>
                         square area
                     </p>
-                    <p className='text-center'>
-                        <span className='strokeme text-4xl font-bold font-rele tracking-[3px] block'>310</span>
+                    <p className='text-center whitespace-nowrap'>
+                        <span className='strokeme lg:text-4xl text-3xl font-bold font-rele tracking-[3px] block'>310</span>
                         square area
                     </p>
 
                 </div>
-                <div
+                <div className={`w-[350px]`}
                     style={{ transform: `rotate(${scrollPercentage}deg)` }}
                 >
                     <img className='w-full h-full object-contain' src={world} alt="loading.." />
                 </div>
             </div>
-            <div className='w-[45%] relative'>
-                <p className='wavyUnderline italic'>service <span className='text-cyan'>it solutions</span></p>
-                <h2 className='text-3xl font-rele font-semibold mt-7'>Tech Change The World</h2>
+            <div className='lg:w-[45%] sm:w-[80%] relative'>
+                <div className='lg:block hidden'>
+                    <p className='wavyUnderline italic'>service <span className='text-cyan'>it solutions</span></p>
+                    <h2 className='text-3xl font-rele font-semibold mt-7'>Tech Change The World</h2>
+                </div>
                 <p className='mt-8 text-gray-500'>
                     Our company provides a full range of services for the construction
                     <span className='block'>of private houses and cottages since 19</span>
@@ -57,16 +63,17 @@ const ServicesSecound = () => {
                     <p><BsCheck className='text-cyan inline text-2xl mr-1' />series of manual and semi-manual activities.</p>
                     <p><BsCheck className='text-cyan inline text-2xl mr-1' />Construction is different from other industries</p>
                 </div>
-                <button className='mt-8 relative capitalize py-4 px-10 bg-lightBlue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg font-rele font-medium'>Tell Us How Can We Help
+                <button className='mt-8 relative capitalize py-4 px-10 bg-lightBlue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg font-rele font-medium max-sm:mx-auto block md:text-base text-sm'>Tell Us How Can We Help
                 </button>
                 <div className='absolute -top-10 right-16'>
                     <img src={shap4} alt="loading..." />
                 </div>
             </div>
-            <div className='absolute -bottom-[99%] -left-[35%]'>
+
+            <div className='absolute -bottom-[99%] -left-[40%]'>
                 <img className='rotateImage' src={shap2} alt="loading..." />
             </div>
-            <div className='absolute top-[10%] left-4'>
+            <div className='absolute sm:top-[10%] top-4 left-4'>
                 <img src={shap1} alt="loading..." />
             </div>
             <div className='absolute bottom-0 right-0'>

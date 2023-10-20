@@ -16,14 +16,10 @@
 
 .text_animation::before {
     content: "";
-    width: 480px;
-    height: 410px;
     position: absolute;
-    top: -100%;
-    left: -5rem;
     animation: profile_animate 8s ease-in-out infinite 1s;
     z-index: -1;
-    @apply bg-lightGray
+    @apply bg-lightGray lg:w-[480px] lg:h-[410px] sm:w-[310px] sm:h-[230px] w-[230px] h-[180px] lg:-left-[5rem] lg:-top-full -top-[5.5rem] -left-[2rem]
 }
 
 @keyframes profile_animate {
@@ -62,8 +58,28 @@
     75% {
         transform: translate(0, 0);
     }
+}
 
+@media (max-width:640px) {
+    @keyframes bounceboll {
 
+        0%,
+        100% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(-50px, 0);
+        }
+
+        50% {
+            transform: translate(-30px, -50px);
+        }
+
+        75% {
+            transform: translate(0, 0);
+        }
+    }
 }
 
 .ripple {
@@ -114,7 +130,7 @@
 }
 
 .swiperbtn {
-    @apply border-2 border-white rounded-full w-12 h-12 flex items-center justify-center text-white
+    @apply border-2 border-white rounded-full sm:w-12 sm:h-12 flex items-center justify-center text-white w-10 aspect-square
 }
 
 .rotateImage {
