@@ -49,10 +49,10 @@ const About = () => {
               It Industries W're offering
             </h1>
           </div>
-          <div className="grid md:grid-cols-3 md:gap-0 gap-10 sm:grid-cols-2 grid-cols-1 mt-12 ">
+          <div className="grid md:grid-cols-3 md:gap-0 gap-8 sm:grid-cols-2 grid-cols-1 mt-12 ">
             {data.map((val, i) => {
               return (
-                <div key={i} className="flex group ">
+                <div key={i} className="flex group max-sm:border-t-2 max-sm:border-dashed max-sm:pt-8 max-sm:first:border-0">
                   <div className="px-8" >
                     <img
                       className="group-hover:scale-x-[-1] transition-all duration-500 max-[640px]:block max-[640px]:mx-auto"
