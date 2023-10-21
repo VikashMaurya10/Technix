@@ -17,6 +17,7 @@ import shape2 from "../../assets/hero/shape-2.png"
 import shape1 from "../../assets/hero/shape-1.png"
 import shape7 from "../../assets/hero/shape-7.png"
 import quot from "../../assets/hero/quot.png"
+import { useNavigate } from 'react-router-dom';
 
 
 const images = [img1, img2, img3]
@@ -29,6 +30,7 @@ const Card = ({ _this }) => {
 }
 
 const Landing = () => {
+    const navigate = useNavigate()
     return (
         <section className='relative w-[98%] mr-0 ml-auto font-robo overflow-hidden'>
             <Swiper navigation={{
@@ -92,7 +94,11 @@ const Landing = () => {
                             <span className='text-cyan'>Tech</span>
                             <span className='strokeme block '> Solution</span>
                         </h1>
-                        <button className='relative capitalize py-3 px-6 md:py-4 md:px-10 bg-darkblue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg flex gap-4 items-center lg:mt-5 sm:mt-[5rem] md:text-base text-sm mt-9'>
+                        <button className='relative capitalize py-3 px-6 md:py-4 md:px-10 bg-darkblue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg flex gap-4 items-center lg:mt-5 sm:mt-[5rem] md:text-base text-sm mt-9'
+                            onClick={() => {
+                                navigate("/comming-soon")
+                            }}
+                        >
                             Learn more <BsArrowRight className='sm:text-xl text-lg' />
                         </button>
                         <div className='w-full'>

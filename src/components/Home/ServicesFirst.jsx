@@ -4,8 +4,11 @@ import services1 from "../../assets/services/services-1.jpg"
 import services2 from "../../assets/services/services-2.jpg"
 import services3 from "../../assets/services/services-3.jpg"
 import services4 from "../../assets/services/services-4.jpg"
+import { useNavigate } from 'react-router-dom'
 
 const Card = ({ value }) => {
+  const navigate = useNavigate()
+
   return (
     <div className='relative group hover:border hover:border-cyan border border-transparent transition-all duration-300 p-4 rounded bg-[#0d1130] h-[380px]  cursor-pointer'>
       <p className='border border-gray-500 rounded-full w-10 h-10 text-sm flex justify-center items-center ml-auto mr-0'>
@@ -20,7 +23,11 @@ const Card = ({ value }) => {
           <img src={value.img} alt="loading..." />
         </div>
       </div>
-      <button className='absolute bottom-8 w-full left-0 text-cyan flex items-center justify-center gap-2 capitalize text-sm'>read out more <BsArrowRight className='-rotate-45' /> </button>
+      <button
+        onClick={() => {
+          navigate("/comming-soon")
+        }}
+        className='absolute bottom-8 w-full left-0 text-cyan flex items-center justify-center gap-2 capitalize text-sm'>read out more <BsArrowRight className='-rotate-45' /> </button>
     </div>
   )
 }
@@ -54,6 +61,8 @@ const cardData = [
 ]
 
 const ServicesFirst = () => {
+  const navigate = useNavigate()
+
   return (
     <section className='bg-darkblue text-white pt-8 font-robo'>
       <p className='text-center italic wavyUnderline'>
@@ -71,7 +80,11 @@ const ServicesFirst = () => {
           })
         }
       </div>
-      <button className='block mx-auto relative capitalize py-4 px-10 bg-darkblue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg border border-gray-600'>view all services</button>
+      <button
+        onClick={() => {
+          navigate("/comming-soon")
+        }}
+        className='block mx-auto relative capitalize py-4 px-10 bg-darkblue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg border border-gray-600'>view all services</button>
     </section>
   )
 }

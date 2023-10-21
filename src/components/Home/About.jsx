@@ -8,7 +8,7 @@ import icon2 from "../../assets/about/icon-2.png";
 import icon3 from "../../assets/about/icon-3.png";
 import callicon from "../../assets/icon/call.svg";
 import bgpattern from "../../assets/about/shape-1.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const data = [
   {
@@ -28,6 +28,8 @@ const data = [
   },
 ];
 const About = () => {
+  const navigate = useNavigate()
+
   return (
     <section className="min-h-screen font-robo py-16">
       <div className="xl:hidden block w-full text-center">
@@ -64,7 +66,11 @@ const About = () => {
                       {val.para}
                     </p>
 
-                    <button className="md:mt-8 mt-4 md:w-[50px] md:h-[50px] w-10 aspect-square flex border rounded-full">
+                    <button
+                      onClick={() => {
+                        navigate("/comming-soon")
+                      }}
+                      className="md:mt-8 mt-4 md:w-[50px] md:h-[50px] w-10 aspect-square flex border rounded-full">
                       <BiRightArrowAlt className="m-auto text-xl" />
                     </button>
                   </div>

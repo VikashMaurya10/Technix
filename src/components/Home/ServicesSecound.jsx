@@ -6,8 +6,11 @@ import shap2 from "../../assets/fun-fact/shape-2.png"
 import shap1 from "../../assets/fun-fact/shape-1.png"
 import shap3 from "../../assets/fun-fact/shape-3.png"
 import shap4 from "../../assets/fun-fact/shape-4.png"
+import { useNavigate } from 'react-router-dom'
 
 const ServicesSecound = () => {
+    const navigate = useNavigate()
+
     const [scrollPercentage, setScrollPercentage] = useState(0);
 
     const updateScrollPercentage = () => {
@@ -63,7 +66,11 @@ const ServicesSecound = () => {
                     <p><BsCheck className='text-cyan inline text-2xl mr-1' />series of manual and semi-manual activities.</p>
                     <p><BsCheck className='text-cyan inline text-2xl mr-1' />Construction is different from other industries</p>
                 </div>
-                <button className='mt-8 relative capitalize py-4 px-10 bg-lightBlue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg font-rele font-medium max-sm:mx-auto block md:text-base text-sm'>Tell Us How Can We Help
+                <button
+                    onClick={() => {
+                        navigate("/comming-soon")
+                    }}
+                    className='mt-8 relative capitalize py-4 px-10 bg-lightBlue text-white after:absolute after:w-[1.2rem] after:h-[1.2rem] after:bg-cyan after:right-0 after:bottom-0 after:content-[""] after:rounded-tl-lg font-rele font-medium max-sm:mx-auto block md:text-base text-sm'>Tell Us How Can We Help
                 </button>
                 <div className='absolute -top-10 right-16'>
                     <img src={shap4} alt="loading..." />
