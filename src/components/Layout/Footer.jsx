@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className='bg-[#040e1c] text-white py-16'>
       <div className='w-[90%] mx-auto'>
-        <NavLink to={"/"}>
+        <NavLink to={"/"} className="w-fit block">
           <img className="mb-4" src={logo} alt="loading..." />
         </NavLink>
         <hr />
