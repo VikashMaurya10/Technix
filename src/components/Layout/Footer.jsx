@@ -14,8 +14,7 @@ const Footer = () => {
             Themepure. All Right Reserved
           </p>
           <div className='flex gap-8 max-sm:justify-center max-sm:mt-1'>
-            <NavLink className={"text-gray-400"} to={"/t&c"}>Terms and Conditions</NavLink>
-            {/* <NavLink to={'/privacy-policy'}>Privacy policy</NavLink> */}
+            <NavLink className={"text-gray-400"} to={"/comming-soon"}>Terms and Conditions</NavLink>
             <NavLink className={"text-gray-400"} to={'/comming-soon'}>Privacy policy</NavLink>
           </div>
         </div>
