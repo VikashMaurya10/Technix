@@ -33,7 +33,7 @@ const data = [
 const Feature = () => {
   return (
     <section className="relative  font-robo    bg-cover  bg-[-100px_0px]   bg-[url(./src/assets/feature/shape-1.png)] py-16 before:top-0 before:absolute sm:before:h-[75%] before:h-[90%] before:bg-[#f3fbfe] before:z-[-1] before:w-full after:bottom-0 after:absolute sm:after:h-[25%] after:h-[10%] after:bg-[#020626] after:z-[-1] after:w-full">
-      <div className="w-[90%] m-auto ">
+      <div className="lg:w-[90%] w-[95%] max-sm:w-[80%] m-auto ">
         <div className="flex lg:flex-row flex-col justify-between items-center ">
           <div>
             <h1 className="lg:text-xl md:text-base text-sm max-lg:text-center wavyUnderline italic">
@@ -52,7 +52,7 @@ const Feature = () => {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-4 mt-16">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-8 gap-x-4  max-md:gap-y-10 mt-16">
           {data.map((val, i) => {
             return (
               <div
